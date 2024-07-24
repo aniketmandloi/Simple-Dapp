@@ -12,3 +12,9 @@
 - run `npm install` to install all the dependencies.
 - Install truffle suit: `npm i -g truffle`.
 - Install ganache: `npm install -g ganache-cli`.
+
+## Compiling and deploying
+
+- to compile the contract use `truffle compile`.
+- to deploy start the Granache first `ganache-cli`.
+- deploy the contract using `truffle migrate`.
