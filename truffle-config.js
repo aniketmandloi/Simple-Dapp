@@ -53,7 +53,7 @@
 const HDWalletProvider = require("@truffle/hdwallet-provider");
 const infuraKey = "e6aa43f8119d4dfa944bd0e167d5fedd";
 const mnemonic =
-  "essay fog bottom naive focus push liar relax trial spare model scene";
+  "f8a3c32e1d556aa450069c6445fb4c0aa48b85d98c764a33c7d1b07cb922440c";
 
 module.exports = {
   /**
@@ -73,18 +73,19 @@ module.exports = {
     // tab if you use this network and you must also set the `host`, `port` and `network_id`
     // options below to some value.
     //
-    sepolia: {
+    networkCheckTimeoutnetworkCheckTimeout: 10000,
+    timeoutBlocks: 200,
+    mainnet: {
       provider: () =>
         new HDWalletProvider(
           mnemonic,
-          `https://sepolia.infura.io/v3/${infuraKey}`
+          `https://mainnet.infura.io/v3/${infuraKey}`
         ),
-      network_id: 11155111,
+      network_id: 1,
       gas: 30000000, // Rinkeby has a lower block limit than mainnet
       confirmations: 2, // # of confs to wait between deployments
-      timeoutBlocks: 200, // # of blocks before a deployment times out
+      timeoutBlocks: 300, // # of blocks before a deployment times out
       skipDryRun: true,
-      setTimeout: 30000,
     },
     // development: {
     //   host: "127.0.0.1", // Localhost (default: none)
