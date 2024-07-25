@@ -16,5 +16,5 @@
 ## Compiling and deploying
 
 - to compile the contract use `truffle compile`.
-- to deploy start the Granache first `ganache-cli`.
+- to deploy start the Granache first `ganache-cli` on a new terminal.
 - deploy the contract using `truffle migrate`.
