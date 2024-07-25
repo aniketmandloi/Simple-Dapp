@@ -18,3 +18,13 @@
 - to compile the contract use `truffle compile`.
 - to deploy start the Granache first `truffle develop` on a new terminal.
 - deploy the contract using `migrate --reset`.
+
+# MetaMask setup
+
+- Install metamask extension for browser.
+- setup a wallet.
+- setup network.
+- use the local host value also chain Id will be 1337 default for `truffle develop` command.
+- rpc url: `http://localhost:9545`.
+- import the account, you'll have a test account in the output of your terminal.
+- you're ready to interact with the account.
